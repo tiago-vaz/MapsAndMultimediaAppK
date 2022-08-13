@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AudioManagerActivity">
+
+    <ImageView
+        android:id="@+id/imgCow"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cow"
+        android:onClick="soundCow"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:text="Toque na imagem do animal, seu animal!"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imgCat"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cat_img"
+        android:onClick="soundCat"/>
+
+</LinearLayout>
