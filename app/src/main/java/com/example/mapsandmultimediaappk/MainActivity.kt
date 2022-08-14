@@ -11,11 +11,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-//    fun acessarAnimacao(view: View) {
-//        val intent = Intent(this, AnimacaoActivity::class.java)
-//        startActivity(intent)
-//    }
-
     fun acessaRecuperacaoFotos(view: View) {
         val intent = Intent(this, RecuperaFotosActivity::class.java)
         startActivity(intent)
@@ -28,6 +23,16 @@ class MainActivity : AppCompatActivity() {
 
     fun abrirAudioManager(view: View) {
         val intent = Intent(this, AudioManagerActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun abrirMediaManager(view: View) {
+        val intent = Intent(this, VideoMediaPlayerActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun abrirViewAnimation(view: View) {
+        val intent = Intent(this, AnimationActivity::class.java)
         startActivity(intent)
     }
 }
