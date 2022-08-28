@@ -19,42 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/btnUtilizarMapView"
-        android:onClick="acessaMapVieew"
-        android:text="Utilizando mapas: MapView"
-        android:textSize="14dp"
-        android:textAllCaps="false"
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btnLocalizarUser"
-        android:onClick="localizaUser"
-        android:text="Localização do usuário com Location API"
-        android:textSize="14dp"
-        android:textAllCaps="false"
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btnRotas"
-        android:onClick="rotas"
-        android:text="Rotas"
-        android:textSize="14dp"
-        android:textAllCaps="false"
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btnPontosInteresse"
-        android:onClick="pontosInteresse"
-        android:text="Pontos de Interesse"
-        android:textSize="14dp"
-        android:textAllCaps="false"
-        android:gravity="left"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
         android:id="@+id/btnAbrirWebView"
         android:onClick="abrirWebView"
         android:text="Usando Web View em seus Apps"
