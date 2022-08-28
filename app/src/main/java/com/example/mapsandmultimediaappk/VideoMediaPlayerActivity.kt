@@ -14,10 +14,12 @@ class VideoMediaPlayerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_media_player)
+        //Criando um media player carregando um vídeo disponível na internet
         val mediaController = MediaController(this)
         mediaController.setAnchorView(vv)
         val uriPath = "https://archive.org/download/WildlifeSampleVideo/Wildlife.mp4"
         uri = Uri.parse(uriPath)
+        //Caso isConstinously estiver como true, ao terminar a execução do vídeo, reinicie
         vv!!.setOnCompletionListener {
             if (isConstinuously) {
                 vv!!.start()

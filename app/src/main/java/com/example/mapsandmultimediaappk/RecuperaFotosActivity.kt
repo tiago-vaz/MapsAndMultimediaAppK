@@ -11,9 +11,8 @@ class RecuperaFotosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recupera_fotos)
 
-        var equipes = arrayOf("Leão","Pinguim","Urso","Girafa","Tigre","Rato")
+        var animais = arrayOf("Leão","Pinguim","Urso","Girafa","Tigre","Rato")
 
-        //TODO: Refatorar (e aprenderer) para parar de usar esse findViewById
         val textView1 = findViewById<TextView>(R.id.textView1)
         val textView2 = findViewById<TextView>(R.id.textView2)
         val textView3 = findViewById<TextView>(R.id.textView3)
@@ -28,14 +27,15 @@ class RecuperaFotosActivity : AppCompatActivity() {
         val imageView5 = findViewById<ImageView>(R.id.imageView5)
         val imageView6 = findViewById<ImageView>(R.id.imageView6)
 
+        //Setando o texto das textViews com nomes dos animais do array
+        textView1.setText(animais[0])
+        textView2.setText(animais[1])
+        textView3.setText(animais[2])
+        textView4.setText(animais[3])
+        textView5.setText(animais[4])
+        textView6.setText(animais[5])
 
-        textView1.setText(equipes[0])
-        textView2.setText(equipes[1])
-        textView3.setText(equipes[2])
-        textView4.setText(equipes[3])
-        textView5.setText(equipes[4])
-        textView6.setText(equipes[5])
-
+        //Armazenando endereços de imagens da internet em variáveis para uso abaixo
         var i1 = "https://images2.alphacoders.com/259/259300.jpg"
         var i2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYJjKBtoZvMM2-HiNM2EEKY0TxY6wejpOyQ&usqp=CAU"
         var i3 = "https://p.kindpng.com/picc/s/5-56237_polar-bear-png-we-bare-bears-png-pack.png"
@@ -43,6 +43,7 @@ class RecuperaFotosActivity : AppCompatActivity() {
         var i5 = "https://orelhasdevidro.files.wordpress.com/2016/02/tigrao.jpg"
         var i6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaCSXnrx3XmBOEX0fzM_73r2qEfXNWarWKg5ytq7xwJSVWfFRwwCA3QqiGt_w6y5TEpfs&usqp=CAU"
 
+        //Carregando as imagens da internet referenciadas pelas variáveis nas imageViews
         Glide.with(this).load(i1).into(imageView1!!)
         Glide.with(this).load(i2).into(imageView2!!)
         Glide.with(this).load(i3).into(imageView3!!)

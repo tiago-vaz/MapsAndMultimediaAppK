@@ -13,6 +13,7 @@ class AudioManagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_audio_manager)
+        //Criando um objeto de MediaPlayer para cada arquivo de audio a serem utilizados na activity
         cow = MediaPlayer.create(this,R.raw.cow)
         cat = MediaPlayer.create(this,R.raw.cat_meow)
     }
